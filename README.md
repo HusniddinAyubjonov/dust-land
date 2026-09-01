@@ -1,17 +1,45 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 # dust-land
+
+# Задание
+
+Сверстать сайт видеоигры **«Dustland»** — постапокалиптический шутер про выживание. Сайт состоит из двух страниц: **«Главная»** и **«Страница информации»** (правила/политика).
+
+## Страница «Главная»
+
+- шапка с логотипом игры (эмблема + название «DUST LAND»), горизонтальным меню по центру, датой/анонсом справа и оранжевой кнопкой **«REGISTER FOR BETA»**, ниже — строка с иконками соцсетей и датой релиза беты;
+- hero-блок на всю ширину с фоновым артом локации, крупным заголовком **«TRY TO SURVIVE»**, подзаголовком («на планете, которая не прощает ни одной ошибки») и оранжевой кнопкой-CTA **«REGISTER FOR BETA»**;
+- блок **«DUSTLAND GAME»** — крупное фото персонажа-солдата справа, слева заголовок, описание сюжета/сеттинга игры и оранжевая кнопка-CTA;
+- блок **«ABOUT GAME»** — превью видео (с кнопкой play по центру) и текстовое описание игры под ним, ниже — оранжевая кнопка-CTA;
+- блок **«FEATURES»** — чередующиеся карточки «фото + текст» (изображение то слева, то справа от текста), каждая раскрывает одну особенность игры:
+  - «DECIDE ON THE WAYS» — свобода выбора пути прохождения;
+  - «OWN A UNIQUE ARSENAL» — уникальное оружие/арсенал;
+  - «BEWARE OF…» — опасные враги/монстры;
+  - «CHOOSE ONE FROM THE FOUR UNIQUE FACTIONS» — выбор одной из 4 фракций;
+  - «ENJOY THE STUNNING GRAPHICS» — графика на новом движке;
+- блок **«IMMERSE»** — полноширинная тёмная фотография окружения с крупным заголовком **«IMMERSE»**, коротким текстом и оранжевой кнопкой **«REGISTRATION»**;
+- блок **«SYSTEM REQUIREMENTS»** — таблица/две колонки с минимальными и рекомендуемыми системными требованиями (ОС, процессор, память, видеокарта, место на диске, сеть);
+- блок **«DON'T MISS DUSTLAND OPEN BETA TEST»** — фото персонажа слева, справа заголовок, даты проведения открытого бета-теста, оранжевая кнопка регистрации и отметка «бесплатно/бонусы за регистрацию»;
+- блок-подвал перед футером — строка с краткими характеристиками игры (жанр, платформы, дата выхода, издатель и т.п.) и таймер/заголовок **«DUSTLAND RELEASE»**;
+- футер — логотип игры, копирайт, иконки соцсетей и служебные ссылки (Terms of use, Privacy policy, Contact us).
+
+## Страница «Информация»
+
+- та же шапка, что и на главной странице;
+- заголовок раздела (например **«TERMS OF USE»** / **«PRIVACY POLICY»**) и дата последнего обновления;
+- сплошной текстовый блок с пронумерованными пунктами/параграфами (правила использования, политика конфиденциальности) — одна колонка на всю читаемую ширину контента;
+- та же футер-плашка, что и на главной, с иконками соцсетей и ссылками «Terms of use / Privacy policy / Contact us».
+
+## Адаптивность
+
+Сайт должен быть адаптивным, для каждого блока предусмотрена мобильная версия:
+
+- **десктоп** — полноширинные блоки, карточки features чередуются по горизонтали, системные требования — в 2 колонки;
+- **планшет (iPad mini)** — сужение hero-блока, карточки features и системные требования — по 1–2 в ряд, меню сворачивается в бургер;
+- **мобильная версия** — все блоки в один стек (одна колонка), сокращённые заголовки, текстовые блоки страницы «Информация» — без изменения структуры (просто уже колонка).
+
+## Дизайн
+
+Тёмный (чёрно-графитовый фон), контраст за счёт крупных фотографий персонажей и локаций, акцентный цвет — оранжевый (кнопки CTA, акцентные заголовки, элементы меню). Крупная плакатная типографика для заголовков, минималистичные текстовые блоки, фото как основной визуальный акцент.
+
+Сверстать по макету в Figma:
+[https://www.figma.com/design/0dK7SxJr75FsdxOAq7OEav/Dust-Land--Copy-?node-id=56-2&p=f&t=xMva3kIPuBSM9xi6-0](https://www.figma.com/design/0dK7SxJr75FsdxOAq7OEav/Dust-Land--Copy-?node-id=56-2&p=f&t=xMva3kIPuBSM9xi6-0)
