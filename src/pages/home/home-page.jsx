@@ -4,6 +4,7 @@ import { Hero } from "@/widgets/hero/hero";
 import { Participate } from "@/widgets/participate/participate";
 import { About } from "@/widgets/about/about";
 import { Decide } from "@/widgets/decide/decide";
+import { Features } from "@/widgets/features";
 import { Modal } from "@/widgets/modal/modal";
 import "./home-page.css";
 
@@ -27,6 +28,7 @@ export const HomePage = () => {
         <Participate onOpenModal={handleOpenModal} />
         <About />
         <Decide />
+        <Features />
       </main>
 
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
