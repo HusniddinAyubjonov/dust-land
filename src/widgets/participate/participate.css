@@ -1,0 +1,133 @@
+.participate-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0b0c10;
+  display: flex;
+  padding: 80px 100px;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.participate-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px; /* сместили вправо */
+}
+
+.part-subtitle {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.part-title {
+  font-size: 56px;
+  line-height: 1;
+  color: #ffffff;
+  margin: 10px 0;
+  font-weight: 900;
+}
+.part-title span {
+  font-size: 72px;
+  color: var(--accent-orange);
+}
+
+.part-gift {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: rgba(20, 22, 29, 0.8);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  clip-path: polygon(
+    15px 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    0 100%,
+    0 15px
+  );
+  margin-bottom: 20px;
+}
+
+.steam-card-block {
+  background: rgba(20, 22, 29, 0.8);
+  border: 1px solid var(--border-color);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  clip-path: polygon(
+    15px 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    0 100%,
+    0 15px
+  );
+  margin-bottom: 30px;
+}
+.steam-card-block p {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  max-width: 260px;
+}
+.steam-img {
+  width: 164px;
+  height: 123px;
+  object-fit: contain;
+}
+
+.register-now-btn {
+  width: 320px;
+  height: 50px;
+  background: var(--accent-orange);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(15px 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  transition: all 0.2s ease;
+}
+.register-now-btn:hover {
+  background: var(--accent-orange-hover);
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+}
+
+.participate-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Фоновое свечение за солдатом */
+.soldier-bg-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 107, 0, 0.2),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+.soldier-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
