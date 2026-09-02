@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { HomePage } from '@/pages/home'
-import { CookiePolicyPage } from '@/pages/cookie-policy'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "@/pages/home";
+import { CookiePolicyPage } from "@/pages/cookie-policy";
 
 export const App = () => {
   return (
@@ -10,5 +10,5 @@ export const App = () => {
         <Route path="/cookie-policy" element={<CookiePolicyPage />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
