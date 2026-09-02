@@ -1,0 +1,77 @@
+.decide-container {
+  width: 100%;
+  background-color: #08060d;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.decide-header-title {
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+}
+
+.decide-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.decide-image-box {
+  width: 928px;
+  height: 522px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  clip-path: polygon(
+    20px 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 20px
+  );
+}
+.map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decide-text-box {
+  max-width: 380px;
+}
+.decide-text-box h3 {
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.decide-text-box p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.decide-arrow {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  animation: bounceArrow 2s infinite;
+}
+
+@keyframes bounceArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
